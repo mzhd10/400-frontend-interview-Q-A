@@ -56,6 +56,77 @@
   border-color: #00d297;
 }
 
+
+/* for small devices */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: auto;
+    margin-top: 40px; /* Decrease margin-top for smaller screens */
+    background-color: #f9f9f9;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Decrease gap between elements */
+    border-radius: 10px;
+    padding: 20px; /* Decrease padding for smaller screens */
+  }
+
+  .container hr {
+    height: 1px;
+    border: none;
+    background: #31363f;
+  }
+
+  .container h2 {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    font-weight: 500;
+  }
+
+  .container ul li {
+    display: flex;
+    align-items: center;
+    height: 40px; /* Decrease height for smaller screens */
+    padding-left: 10px; /* Decrease padding-left for smaller screens */
+    border: 1px solid #31363f;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Decrease margin-bottom for smaller screens */
+    font-size: 12px; /* Decrease font size for smaller screens */
+    cursor: pointer;
+  }
+
+  .container button {
+    margin: auto;
+    width: 150px; /* Decrease width for smaller screens */
+    height: 50px; /* Decrease height for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .container .index {
+    margin: auto;
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+
+  .container .correct {
+    background-color: #dffff2;
+    border-color: #00d297;
+  }
+
+  .container .wrong {
+    background-color: #ffebeb;
+    border-color: #ff4a4a;
+  }
+
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px; /* Further decrease padding for smaller screens */
+    }
+  }
+}
+
 .container .wrong {
   background-color: #ffebeb;
   border-color: #ff4a4a;
